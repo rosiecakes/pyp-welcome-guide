@@ -28,7 +28,9 @@ Once you fork it, you'll have your "own personal copy" in your own Github Profil
 
 ## Step 3 - Get to work
 
-Make the modifications you want to your code and push all the changes. You'll see your changes and that will make "differ" your fork from the original assignment:
+Make the modifications you want to your code and push all the changes. We recommend you to use Cloud9, as it's **FREE** and you can also collaborate with the rest of your teammates. To see a complete guide on how to set Cloud9 for your own project, see this guide: [http://blog.rmotr.com/students/2015/12/26/step-by-step-guide-to-configure-cloud9-for-group-projects/](http://blog.rmotr.com/students/2015/12/26/step-by-step-guide-to-configure-cloud9-for-group-projects/)
+
+Once you finish making your changes, you'll see them in your repo and you'll be able to see how your fork "differ" from the original repo:
 
 ![image](https://cloud.githubusercontent.com/assets/872296/15336894/258afb60-1c4f-11e6-9bb8-26d4c79150f0.png)
 
