@@ -1,6 +1,6 @@
 # Mentors Guide
 
-* Answering questions and providing help
+* [Answering questions and providing help](#answering-questions-and-providing-help)
 
 ## Answering questions and providing help
 
