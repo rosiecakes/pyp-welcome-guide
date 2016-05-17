@@ -1,4 +1,4 @@
-# Welcome Guide
+# Welcome Guide (testing)
 
 Welcome to rmotr.com! We’re going to start an exciting journey together. This document is a guide for new students to help them get started with the course. Although it's intended for new students, it might also be useful if you're considering taking our course and you're not really sure about how it works. In this document we'll outline the basic methodology we follow, we'll explain how to get help, the course program, among other things.
 
