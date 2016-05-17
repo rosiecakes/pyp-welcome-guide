@@ -66,3 +66,9 @@ The process is way simpler than it sounds. We'll give you a summary of this meth
 rmotr.com is all about human interaction and people helping each other. There's always a mentor available to help. There's always another student cranking at any given time eager to help. The question is: how do I ask for help? Well, the answer is simple: **slack**. In slack we have different channels that's purpose is for you to get help.
 
 ### mentors-help
+
+Just post in the _#mentors-help_ channel your question. You can use the _@channel_ notification to notify all mentors in there. Once you're done asking for help, you can leave the channel if you don't want to get annyoing notifications.
+
+### support-hangouts
+
+During the week there are support hangouts planned. They are just hangout sessions where there's a mentor online in a public Hangout. You can join and ask whatever question you have. You can also join to say hello 👋
