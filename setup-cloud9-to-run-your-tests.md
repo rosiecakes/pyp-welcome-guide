@@ -82,3 +82,42 @@ Just invoke the `tox` command. As simple as that. Just type `tox` in your consol
 
 ![image](https://cloud.githubusercontent.com/assets/872296/15400751/04b94714-1dc3-11e6-8c91-0065f7b878c2.png)
 
+## Extra: Configure your own Cloud9 Runner
+
+We'll confgure our own code runner in C9, which will allow us to use the beloved "Run" green button at the top to run our tests. To do so go to the Menu and click on "Run > Run With > New Runner (at the bottom of the list)" as you can see in the following image:
+
+![image](https://cloud.githubusercontent.com/assets/872296/15405589/e315c072-1dd8-11e6-9e17-03d0036f5966.png)
+
+A new tab will be opened and it should look something like this: 
+
+![image](https://cloud.githubusercontent.com/assets/872296/15405637/18d5ddbe-1dd9-11e6-9127-6b6403686957.png)
+
+To create a Runner that will run all your tests, paste this content:
+
+```json
+{
+    "cmd": [
+        "bash",
+        "--login",
+        "-c",
+        "source rmotr_group_project/bin/activate && make test"
+    ],
+    "info" : "Started $project_path$file_name",
+    "env" : {},
+    "working_dir": "$project_path",
+    "selector" : "source.ext"
+}
+```
+**Important:** Make sure you include the name of your virtualenv. I'm using `rmotr_group_project` in the previous code.
+
+Save your runner, you'll be prompted with a save dialog, choose the name you want (I'm choosing Make Runner) and just click "Save":
+
+![image](https://cloud.githubusercontent.com/assets/872296/15405728/79029150-1dd9-11e6-8379-f8db590f6f53.png)
+
+That's it! The runner should work. To run your tests, go to the Menu: "Run > Run With" and select your runner from the list ("Make Runner" in my example):
+
+![image](https://cloud.githubusercontent.com/assets/872296/15405769/b9228a6a-1dd9-11e6-8f1f-5bc108c813da.png)
+
+You can create as many runners as you wish. For example, you could create a runner to use the Python version of your virtualenv instead of the one used by default.
+
+(Extra docs on runners: [https://docs.c9.io/docs/custom-runners](https://docs.c9.io/docs/custom-runners)
