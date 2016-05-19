@@ -1,5 +1,7 @@
 # Run your tests in Cloud9
 
+Quick guide to setup Cloud9 to run your tests in our group projects. You can see a working example here: [https://ide.c9.io/santiagobasulto_1/pyp-w1-gw-language-detector](https://ide.c9.io/santiagobasulto_1/pyp-w1-gw-language-detector)
+
 ## Step 0 - Install virtualenv
 
 We'll be installing all our dependencies inside a virtualenv, to do so run the following command in C9's shell:
