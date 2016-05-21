@@ -78,7 +78,14 @@ By default, the group projects will have a `Makefile` that can be used to run th
 
 ![image](https://cloud.githubusercontent.com/assets/872296/15400703/d183973c-1dc2-11e6-8958-0c4c1213585f.png)
 
-To run an individual test, in the whole test suite (the entire `test` directory), you can point to a specific method inside a TestCase class, in a given test module. Let's use an example: We want to run just the `test_detect_language_german` ([link](https://github.com/rmotr-group-projects/pyp-w1-gw-language-detector/blob/master/tests/test_main.py#L52)). We'll just need to specify to pytest the "path" to that method. This is the general syntax: `pytest tests/test_module.py::[TEST-CLASS]::[TEST-METHOD]`. So, to run the `test_detect_language_german` method, we just need to do: `PYTHONPATH=. py.test tests/test_main.py::TestLanguageDetector::test_detect_language_german`
+To run an individual test, in the whole test suite (the entire `test` directory), you can point to a specific method inside a TestCase class, in a given test module. Let's use an example: We want to run just the `test_detect_language_german` ([link](https://github.com/rmotr-group-projects/pyp-w1-gw-language-detector/blob/master/tests/test_main.py#L52)). We'll just need to specify to pytest the "path" to that method. This is the general syntax: 
+```
+pytest tests/test_module.py::[TEST-CLASS]::[TEST-METHOD]
+```
+
+So, to run the `test_detect_language_german` method, we just need to do:
+
+```PYTHONPATH=. py.test tests/test_main.py::TestLanguageDetector::test_detect_language_german```
 
 ![image](https://cloud.githubusercontent.com/assets/872296/15448344/faeb90b0-1f35-11e6-880e-e43433bc72b5.png)
 
