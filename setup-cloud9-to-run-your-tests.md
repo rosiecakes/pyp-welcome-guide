@@ -35,7 +35,7 @@ virtualenv rmotr_group_project -p /usr/bin/python3
 ![image](https://cloud.githubusercontent.com/assets/872296/15400429/dead85d6-1dc1-11e6-9d71-818e937ba9ca.png)
 
 
-## Step 3 - Activate your virtualenv
+## Step 2 - Activate your virtualenv
 
 **IMPORTANT**. This step is key. A virtualenv should be "activated". When we "activate" a virtualenv, we're changing the way our Python modules will be loaded. That means that, if at any point you're having issues, you need to make sure you have your virtualenv actiated.
 To activate a virtualenv we'll be using the `source` command, and passing it the location of the "activate" file inside our virtualenv. Supposing my virutalenv is named `rmotr_group_project`, the command would be:
@@ -50,7 +50,7 @@ The _activate_ script will always be located inside the `bin` folder.
 
 ![image](https://cloud.githubusercontent.com/assets/872296/15372980/853ebbb2-1d19-11e6-83ab-17c8f5335d7c.png)
 
-## Step 4 - Investigate your virtualenv
+## Step 3 - Investigate your virtualenv
 
 Being inside a virtualenv means that the Python executable is different from the regular one used by the computer. That will allow us to install our own libraries inside the virtualenv without having conflicts with other users. Run the following command to see where the Python interpreter is located:
 
@@ -62,7 +62,7 @@ If you pay attention, you'll notice that `python` is now located inside the virt
 
 ![image](https://cloud.githubusercontent.com/assets/872296/15373028/d8591338-1d19-11e6-8f3f-2f5b4251a6ab.png)
 
-## Step 5 - Install the requirements
+## Step 4 - Install the requirements
 
 **Make sure your virtualenv is active** and run the following command:
 
@@ -72,13 +72,13 @@ pip install -r dev-requirements.txt
 
 ![image](https://cloud.githubusercontent.com/assets/872296/15373109/5bcee940-1d1a-11e6-8e7b-411a508e9457.png)
 
-## Step 6: Run your tests
+## Step 5: Run your tests
 
 By default, the group projects will have a `Makefile` that can be used to run the project tests. Just use the command `make test` or `make test-cov` (if you want to include a coverage report). **Make sure your virtualenv is active**
 
 ![image](https://cloud.githubusercontent.com/assets/872296/15400703/d183973c-1dc2-11e6-8958-0c4c1213585f.png)
 
-## Step 6.1: Run an individual test method
+## Step 5.1: Run an individual test method
 
 To run an individual test, in the whole test suite (the entire `test` directory), you can point to a specific method inside a TestCase class, in a given test module. Let's use an example: We want to run just the `test_detect_language_german` ([link](https://github.com/rmotr-group-projects/pyp-w1-gw-language-detector/blob/master/tests/test_main.py#L52)). We'll just need to specify to pytest the "path" to that method. This is the general syntax: 
 ```
@@ -92,7 +92,7 @@ So, to run the `test_detect_language_german` method, we just need to do:
 ![image](https://cloud.githubusercontent.com/assets/872296/15448344/faeb90b0-1f35-11e6-880e-e43433bc72b5.png)
 
 
-## Step 7: Run tests in multiple Python versions
+## Step 6: Run tests in multiple Python versions
 
 Just invoke the `tox` command. As simple as that. Just type `tox` in your console (with the venv active):
 
